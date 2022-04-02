@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  margin-top: 45px;
+  margin-left: 75px;
+}
+
+.logo {
+  padding-top: 1em;
+}
+
+nav ul {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 1.1rem;
+  transition: 0.1s;
+  letter-spacing: 0.15em;
+}
+
+nav a:hover {
+  border-bottom: 2.5px white solid;
+  padding-bottom: 1.5px;
+  box-shadow: 0 0.5em 0.5em -0.3em whitesmoke;
+}
+
+/* nav a:active {
+  transform: translateY(100px);
+} */
+
+.flex-container {
+  display: flex;
+  width: 100%;
+}
+.flex-container-upper {
+  height: 65vh;
+}
+.flex-container-bottom {
+  height: 35vh;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  text-align: left;
+}
+
+.home-1 {
+  flex: 0 0 auto;
+  width: 60%;
+  background-image: url("./images/desktop-image-hero-1.jpg");
+  background-size: cover;
+}
+
+.home-2 {
+  flex: 0 0 auto;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7em;
+  position: relative;
+}
+
+.arrow-button {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  width: 25%;
+  height: 13%;
+}
+
+.arrow-button button {
+  background-color: black;
+  border-color: black;
+  width: 45%;
+  margin: 0;
+}
+
+.home-2 > a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.8rem;
+  border: 1px solid black;
+  border-radius: 1.5em;
+  transition: 0.15s;
+  text-align: center;
+  padding: 0.8em 1em;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+.home-2 > a:hover {
+  color: white;
+  background-color: black;
+}
+
+.home-2 > img:hover {
+  background-color: white;
+}
+
+.home-3 {
+  flex: 0 0 auto;
+  width: 30%;
+  background-image: url("./images/image-about-dark.jpg");
+  background-size: cover;
+}
+
+.home-4 {
+  flex: 0 0 auto;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 0 60px;
+}
+
+.home-5 {
+  flex: 0 0 auto;
+  width: 30%;
+  background-image: url("./images//image-about-light.jpg");
+  background-size: cover;
+}
